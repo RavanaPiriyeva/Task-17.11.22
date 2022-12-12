@@ -1,0 +1,118 @@
+header {
+    background-image: linear-gradient(rgba(12, 12, 12, 0.411), rgba(2, 2, 2, 0.089)),
+        url("../../assets/img/6c1d8510b5c7098349eb27b1334c70fe.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 10px;
+    button {
+        background-color: transparent;
+        border: 2px solid white;
+        padding: 5px;
+        color: white;
+        font-size: 16px;
+        transition: all 1s;
+        border-radius: 5px;
+        &:hover {
+            box-shadow: 0px 0px 15px 10px;
+        }
+    }
+
+    .navbar {
+        //    height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 30px 10px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        .logo {
+            h1 {
+                font-family: "Lobster", cursive;
+                //font-weight: 400;
+                font-size: 30px;
+                letter-spacing: 2px;
+            }
+        }
+        .nav {
+            width: 30%;
+            @media screen and (max-width: 920px) {
+                width: 50%;
+            }
+            @media screen and (max-width: 700px) {
+                display: none;
+            }
+            ul {
+                display: flex;
+                padding: 0;
+                justify-content: space-around;
+                font-size: 18px;
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+            li {
+                list-style: none;
+                transition: all 0.5s;
+                &:hover {
+                    text-shadow: 1px 1px 10px white;
+                }
+            }
+        }
+        .menu {
+            display: none;
+            font-size: 30px;
+            @media screen and (max-width: 700px) {
+                display: block;
+            }
+        }
+    }
+
+    #slider {
+        padding: 20px;
+        text-align: end;
+        color: white;
+
+        h1 {
+            font-size: 45px;
+            font-weight: 700;
+            font-family: "Russo One", sans-serif;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            animation-name: example;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+           
+        }
+        p {
+            margin: 40px 0;
+            font-size: 23px;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 2px;
+            line-height: 30px;
+            animation-name: example;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px 0;
+           
+        }
+    }
+}
+
+@keyframes example {
+    0% {
+        margin-right: 0%;
+    }
+    50% {
+        margin-right: 10%;
+   }
+    100%{margin-right: 0%;}
+  }

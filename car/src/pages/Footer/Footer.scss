@@ -1,0 +1,81 @@
+footer {
+    background-color: black;
+
+    color: white;
+
+    .map {
+        padding: 50px 0 0 0;
+        iframe {
+            width: 100%;
+        }
+    }
+    .text {
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .logo {
+            @media screen and (max-width: 920px) {
+                width: 100%;
+                padding-bottom: 30px;
+            }
+        }
+        h1 {
+            text-transform: uppercase;
+            font-family: "Russo One", sans-serif;
+            text-align: center;
+            font-size: 45px;
+            letter-spacing: 2px;
+        }
+        ul {
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 10px;
+
+            li {
+                list-style: none;
+                font-size: 16px;
+                line-height: 25px;
+                cursor: pointer;
+                transition: all 0.5s;
+
+                &:hover {
+                    text-shadow: 1px 1px 10px white;
+                    padding-left: 5px;
+                }
+            }
+            .icon {
+                display: flex;
+                justify-content: space-between;
+                font-size: 20px;
+                margin-top: 15px;
+                text-shadow: 1px 1px 20px white;
+                &:hover {
+                    padding: 0;
+                }
+                i:hover {
+                    text-shadow: 1px 1px 20px rgb(255, 0, 0);
+                }
+            }
+        }
+
+        h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 2px;
+            padding: 30px 0 0;
+        }
+    }
+    .bottom {
+        background-color: rgb(19, 18, 18);
+        display: flex;
+        justify-content: space-between;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        padding: 15px;
+        .main {
+            width: 20%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
